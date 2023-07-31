@@ -14,10 +14,10 @@ import java.io.Serializable;
 @EqualsAndHashCode(of = {"id"})
 public class Product implements Serializable {
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private Double price;
 	private String description;
-	private String imageUrl;
+	private String imageUri;
 }
